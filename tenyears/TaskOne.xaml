@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tenyears.TaskOne"
+             Title="TaskOne">
+    <Grid RowDefinitions="*,*" Margin="10">
+        <Label TextColor="Red" Text="Welcome X" Grid.Row="0" x:Name="lableResult"/>
+        
+            <VerticalStackLayout Spacing="10" Grid.Row="1" VerticalOptions="End">
+                <Label Text="your name"/>
+                <Entry x:Name="entryName"/>
+                <Label Text="your age"/>
+                <Entry x:Name="entryAge" Keyboard="Numeric"/>
+                <Button Clicked="Button_Clicked" Text="calculate"></Button>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
