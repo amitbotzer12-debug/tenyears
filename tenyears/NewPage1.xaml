@@ -10,11 +10,13 @@
         <VerticalStackLayout Spacing="10" Grid.Row="1" VerticalOptions="End">
             <Label Text="your name"/>
             <Entry x:Name="entryName"/>
-            <Label Text="your age"/>
-            <Label x:Name="entryAge" />
             
-
-            <Slider Minimum="0" Maximum="100" ValueChanged="Slider_ValueChanged" DragCompleted="sliderAge_DragCompleted" x:Name="sliderAge"/>
+            <Grid ColumnSpacing="10" ColumnDefinitions="5*,Auto,Auto">
+                <Label Text="Your age:" Grid.Column="1"/>
+                <Label x:Name="entryAge" Grid.Column="2"/>
+                <Slider Minimum="0" Maximum="100" ValueChanged="Slider_ValueChanged" DragCompleted="sliderAge_DragCompleted" x:Name="sliderAge" Grid.Column="0"/>
+            </Grid>
+            
         </VerticalStackLayout>
     </Grid>
 </ContentPage>
