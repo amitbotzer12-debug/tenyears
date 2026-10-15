@@ -10,8 +10,8 @@
                 <Label Text="your name"/>
                 <Entry x:Name="entryName"/>
                 <Label Text="your age"/>
-                <Entry x:Name="entryAge" Keyboard="Numeric"/>
-                <Button Clicked="Button_Clicked" Text="calculate"></Button>
+            <Entry x:Name="entryAge" Keyboard="Numeric"/>
+            <Button Clicked="Button_Clicked" Text="calculate"></Button>
         </VerticalStackLayout>
     </Grid>
 </ContentPage>

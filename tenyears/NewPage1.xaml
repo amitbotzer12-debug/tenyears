@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tenyears.NewPage1"
+             Title="NewPage1">
+
+    <Grid RowDefinitions="*,*" Margin="10">
+        <Label TextColor="Red" Text="Welcome X" Grid.Row="0" x:Name="lableResult" FontSize="50"/>
+
+        <VerticalStackLayout Spacing="10" Grid.Row="1" VerticalOptions="End">
+            <Label Text="your name"/>
+            <Entry x:Name="entryName"/>
+            <Label Text="your age"/>
+            <Label x:Name="entryAge" />
+            
+
+            <Slider Minimum="0" Maximum="100" ValueChanged="Slider_ValueChanged" DragCompleted="sliderAge_DragCompleted" x:Name="sliderAge"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
